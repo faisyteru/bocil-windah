@@ -1,0 +1,97 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: #f5efe6; /* cream soft */
+    font-family: 'Poppins', sans-serif;
+    color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+}
+
+#main_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.form_box {
+    background: #1f1f1f; /* hitam soft */
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    border: 2px solid #b23a48; /* merah kalem */
+}
+
+.form_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f5efe6; /* cream */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form_content label.form_label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #f5efe6; /* cream */
+}
+
+.form_textbox, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b23a48; /* merah */
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #2b2b2b; /* abu gelap */
+    color: #f5efe6;
+}
+
+.form_textbox::placeholder,
+textarea::placeholder {
+    color: #d6cfc7; /* cream agak pudar */
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+select {
+    color: #f5efe6;
+}
+
+.form_button {
+    background-color: #b23a48; /* merah kalem */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form_button:hover {
+    background-color: #d1495b; /* merah lebih terang */
+    transform: translateY(-2px);
+}
+
+.form_checkbox li {
+    list-style: none;
+    margin-top: 5px;
+    color: #f5efe6;
+}
+
+.form_checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #b23a48; /* warna checkbox */
+}
